@@ -18,3 +18,5 @@
 1. https://github.com/EvoShishir/shopping-website
 2. https://github.com/EvoShishir/shopping-server
 3. https://github.com/EvoShishir/shishir-portfolio
+
+It took me around 3 to 4 hours to complete the project.
