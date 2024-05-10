@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import SearchFlight from "./Pages/SearchFlight/SearchFlight";
+import FlightList from "./Pages/FlightList/FlightList";
 
 function App() {
   const router = createBrowserRouter([
@@ -9,7 +10,7 @@ function App() {
     },
     {
       path: "/flights",
-      // element: <SignInPage />,
+      element: <FlightList />,
     },
   ]);
 
