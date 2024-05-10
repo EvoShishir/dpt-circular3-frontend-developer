@@ -1,30 +1,20 @@
-# Assessment test for Frontend Developer
+# Complete assessment for Frontend Developer
 
-1. Fork this repository.
-2. Clone this repository to your local machine.
-3. Check data and image folder.
-4. Follow the image first. There is a search form and formated data.
-5. You need to create a flight search form with HTML, CSS and Tailwind CSS.
-6. On form submit get the json data privided inside data folder.
-7. Parse and show your data according to the image provided.
+1. The solved assessment is located in the branch **origin/dev-atefarmanshishir**.
+2. Type **yarn install** or **npm install** to setup the dependecies.
+3. Type **yarn dev** to run the project.
+4. The **SearchInput** component is created for reusability and is used twice in the two different pages.
+5. Data formatting is done by using a custom hook called **useFormattedFlightData**
 
-==============================================================
+===========================================================================================
 
--   Follow https://flightexpert.com or https://gozayaan.com to understand what are we doing.
--   Do not copy Flight Expert or Go Zayaan, just get idea and follow the image we have given.
--   LHR = Heathrow Airport, CDG = Paris Charles de Gaulle Airport.
--   You do not need to make the form dynamic or filter anything, Just parse the data.
+# My Live Projects
 
-==============================================================
+1. https://shopvibe-client.netlify.app/
+2. https://atefarmanshishir.netlify.app/
 
--   Complete this task using fresh laravel/Vue JS/React JS or any other language.
--   Update your readme file how can we run the proejct.
--   Mention how much time have you spent for this to complete.
--   Mention the best practices you've implemented in your code.
--   Provide URLs for two of your live frontend projects.
--   Share links to your top two personal Git repositories.
+# My Git Repositories
 
-==============================================================
-
--   Upload your code on github and send us link.
--   Video guideline:- https://www.loom.com/share/87a2a73e58484f18b08b47ad5af55e99
+1. https://github.com/EvoShishir/shopping-website
+2. https://github.com/EvoShishir/shopping-server
+3. https://github.com/EvoShishir/shishir-portfolio
