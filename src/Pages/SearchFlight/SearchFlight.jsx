@@ -11,6 +11,7 @@ const SearchFlight = () => {
         </h1>
         <br />
         <div>
+          {/* used the component to include search fields */}
           <SearchInput redirect={"/flights"} />
         </div>
       </div>

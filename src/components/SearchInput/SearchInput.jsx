@@ -1,6 +1,7 @@
-import { Autocomplete, TextField } from "@mui/material";
 import React from "react";
+import { Autocomplete, TextField } from "@mui/material";
 
+// redirect prop is sent from other pages to determine where to go on click of the button
 const SearchInput = ({ redirect }) => {
   const handleClick = () => {
     window.location.href = redirect;
@@ -24,7 +25,7 @@ const SearchInput = ({ redirect }) => {
   return (
     <section>
       <div>
-        <div className="flex flex-wrap items-center justify-start gap-6 mb-3 justify-center">
+        <div className="flex flex-wrap items-center gap-6 mb-3 justify-center">
           <div className="flex items-center gap-1">
             <input type="radio" id="oneWay" name="tripType" />
             <label htmlFor="oneWay">One Way</label>

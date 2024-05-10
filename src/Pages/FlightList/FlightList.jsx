@@ -4,6 +4,7 @@ import "./FlightList.css";
 import useFormattedFlightData from "../../hooks/useFormattedFlightData";
 
 const FlightList = () => {
+  // custom hook is used to get the formatted data
   const flightInfo = useFormattedFlightData();
 
   return (
@@ -22,11 +23,14 @@ const FlightList = () => {
             <p className="font-bold">Duration</p>
             <p className="font-bold">Price</p>
           </div>
+
+          {/* Mapping the data to get values for the table */}
           {flightInfo.map((flight) => (
             <div
               key={flight.id}
               className="items-center border-b-2 border-gray-300 py-2 tableContainer"
             >
+              {/* getting the flight number */}
               <div>
                 {flight.routeInfo.map((route, index) => (
                   <div key={index} className="flex-col ">
@@ -34,6 +38,8 @@ const FlightList = () => {
                   </div>
                 ))}
               </div>
+
+              {/* getting aircraft info */}
               <div>
                 {flight.routeInfo.map((route, index) => (
                   <div key={index} className="flex-col">
@@ -41,6 +47,8 @@ const FlightList = () => {
                   </div>
                 ))}
               </div>
+
+              {/* flight class */}
               <div>
                 {flight.flightClass.map((fclass, index) => (
                   <div key={index} className="flex-col">
@@ -48,6 +56,8 @@ const FlightList = () => {
                   </div>
                 ))}
               </div>
+
+              {/* fare basis */}
               <div>
                 {flight.fareBasis.map((basis, index) => (
                   <div key={index} className="flex-col">
@@ -55,6 +65,8 @@ const FlightList = () => {
                   </div>
                 ))}
               </div>
+
+              {/* the location between which the journey is happening */}
               <div>
                 {flight.routeInfo.map((journey, index) => (
                   <div key={index} className="flex-col">
@@ -62,6 +74,8 @@ const FlightList = () => {
                   </div>
                 ))}
               </div>
+
+              {/* departure time */}
               <div>
                 {flight.routeInfo.map((journeyTime, index) => (
                   <div key={index} className="flex-col">
@@ -69,6 +83,8 @@ const FlightList = () => {
                   </div>
                 ))}
               </div>
+
+              {/* arrival time */}
               <div>
                 {flight.routeInfo.map((journeyTime, index) => (
                   <div key={index} className="flex-col">

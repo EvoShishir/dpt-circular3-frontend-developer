@@ -5,6 +5,8 @@ const useFormattedFlightData = () => {
   const [flightInfo, setFlightInfo] = useState([]);
 
   useEffect(() => {
+    // the data is broken down to simplify and format such that it serves the purpose in a less complicated way
+
     const formattedFlightInfo = flightOffer.map((flight, index) => {
       const flightPrice = parseFloat(flight.price).toFixed(2);
       const fareBasis = flight.fareBasis[0];
